@@ -1,0 +1,64 @@
+* {
+  --body-background-color: #fbf5fc;
+  --green-color-theme: #0a846e;
+  --brown-color-theme: #967054;
+  --green-text: #03382f;
+  --red-button: #aa4358;
+}
+
+@font-face {
+  font-family: Maven Pro;
+  src: url(static/MavenPro-Regular.ttf);
+}
+@font-face {
+  font-family: Open Sans;
+  src: url(static/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: Open Sans Bold;
+  src: url(static/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: Lato;
+  src: url(static/Lato-Regular.ttf);
+}
+
+p {
+  font-family: Open Sans;
+}
+
+h1 {
+  font-family: Maven Pro;
+  color: var(--green-color-theme);
+  font-size: 3em;
+  font-weight: bolder;
+}
+
+b {
+  font-family: Open Sans Bold;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+button {
+  background-color: var(--green-color-theme);
+  padding: 15px 35px;
+  width: fit-content;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 2px 5px black;
+  font-size: 1.25em;
+  font-family: Maven Pro;
+  font-weight: bolder;
+  transition: 0.25s;
+}
+
+button:hover {
+  background-color: rgb(129, 182, 129);
+  cursor: pointer;
+}
+
+h2 {
+  font-family: Lato;
+}

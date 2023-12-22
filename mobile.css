@@ -1,0 +1,129 @@
+@media screen and (max-width: 750px) {
+  body {
+    width: 100%;
+  }
+  header {
+    grid-template-areas:
+      "hand     hand"
+      "hand     hand"
+      "plant    shovel";
+
+    .plant,
+    .shovel {
+      aspect-ratio: 1;
+    }
+    .imag .mobile-menu {
+      display: block;
+    }
+  }
+  nav {
+    display: none;
+  }
+
+  main {
+    padding: 10px;
+    grid-template-areas:
+      "header header"
+      "info   info"
+      "circle circle"
+      "line    line"
+      "a_head a_head"
+      "plants plants"
+      "showm   showm"
+      "circle2 circle2"
+      "info2  info2";
+
+    .info,
+    .info2 {
+      text-align: center;
+      button {
+        align-self: center;
+      }
+      p {
+        font-size: 1.5em;
+      }
+    }
+
+    .water,
+    .water2 {
+      width: 75%;
+      justify-self: center;
+    }
+
+    hr {
+      width: 50%;
+      justify-self: center;
+    }
+
+    #plants {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .seed-info {
+        margin-bottom: 15px;
+      }
+      .plant .seed-info .seed-erase-mobile {
+        display: block;
+      }
+      .plant .seed-info .seed-erase {
+        display: none;
+      }
+    }
+  }
+
+  footer {
+    grid-template-areas:
+      "img img"
+      "contact contact"
+      "back back";
+    grid-auto-rows: 1fr 1fr auto;
+    img {
+      grid-area: img;
+    }
+    .contact {
+      grid-area: contact;
+    }
+  }
+  body {
+    margin: 0;
+    border: none;
+    overflow-x: hidden;
+  }
+
+  .banner {
+    aspect-ratio: 1;
+    padding: 0;
+    gap: 100px;
+    .heart {
+      width: 60%;
+    }
+    .mobile-menu {
+      display: block;
+      width: 50px;
+    }
+  }
+  .minasidor {
+    grid-template-areas:
+      "rub"
+      "pla"
+      "ipla"
+      "dat"
+      "idat"
+      "ad";
+  }
+  #plants,
+  #plants2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .woodenfooter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #967054;
+    padding: 33px;
+    filter: opacity(0.8);
+    gap: 25px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

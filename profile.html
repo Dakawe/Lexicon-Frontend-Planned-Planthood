@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mina sidor | Bonde!</title>
+    <link rel="stylesheet" href="root.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <p>Planer</p>
+      <p>Historik</p>
+      <p>Tips</p>
+      <p onclick="location.href='profile.html';">Logga in</p>
+      <div class="under-nav"></div>
+    </nav>
+    <div class="banner">
+      <img src="assets/Logo.svg" class="heart" />
+      <h1>Mina sidor</h1>
+      <img src="assets/menu.png" class="mobile-menu" />
+    </div>
+    <div class="minasidor">
+      <h2 class="rub">Lägg till ny plantering:</h2>
+      <p class="pla">Planta:</p>
+      <p class="dat">Datum:</p>
+      <input type="text" class="ipla" id="ipla" />
+
+      <input type="text" class="idat" id="idat" />
+      <button class="ad">LÄGG TILL</button>
+    </div>
+    <div class="plantor">
+    <h2 class="pp">Dina planerade planteringar:</h2>
+    <section id="plants"></section>
+    <h2 class="pp">Dina planterade planteringar:</h2>
+    <section id="plants2"></section>
+    <div class="woodenfooter">
+      <img src="assets/one.png" />
+      <img src="assets/two.png" />
+      <img src="assets/three.png" />
+      <img src="assets/four.png" />
+    </div>
+    <p class="profile" onclick="scrollBack()">Till toppen av sidan</p>
+  </body>
+  <script>
+    addPlants(2, 'plants');
+    addPlants(1, 'plants2');
+  </script>
+</html>
