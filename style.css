@@ -375,7 +375,7 @@ footer {
         font-family: Lato;
         color: black;
         justify-self: start;
-        align-self: end;
+        align-self: baseline;
       }
       .seed-erase {
         grid-area: erase;
@@ -383,8 +383,9 @@ footer {
         align-self: baseline;
         background-color: var(--red-button);
         padding: 7px 10px;
-        font-size: 0.8em;
+        font-size: 0.75em;
         box-shadow: none;
+        display: block;
       }
       .seed-erase:hover {
         background-color: rgb(238, 16, 12);
